@@ -3,22 +3,20 @@
 One-sentence description of what it does.
 
 ## The Problem
-
-2–3 sentences on the problem you're solving. Why did you build this?
-(This is where you drop your HW7 Part 1.1 problem statement.)
+Trying to find dates and times that a large group of people will be available on.
 
 ## How It Works
 
 A paragraph or a few bullets explaining what the software does at a
 high level. If you have a diagram, embed it here:
 
-![System diagram](docs/diagram.png)
+![System diagram](docs/FlowChart.drawio.png)
 
 ## Tech Stack
 
-- **Language:** Bash / Java / etc.
-- **Libraries:** any external dependencies
-- **External tools:** cron, curl, APIs, etc.
+- **Language:** Java
+- **Libraries:** ArrayLists, Math, time
+- **External tools:** IntelliJ
 
 ## Setup
 
@@ -26,7 +24,7 @@ Step-by-step: how does someone who just cloned your repo get it
 running?
 
 ```bash
-git clone https://github.com/you/your-project
+git clone https://github.com/gjhainzl/cs193-final-project
 cd your-project
 ./install.sh   # or whatever
 ```
@@ -49,4 +47,4 @@ Features you haven't built yet but plan to (pull these from your
 
 ## Author
 
-Your name, a link to your GitHub.
+Gabe Hainzl, github.com/gjhainzl
