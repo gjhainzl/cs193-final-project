@@ -9,7 +9,7 @@ public class Components {
 
     //File reading/writing stuff
     public static JList<PlaceholderItem> objectList;
-    public static JLabel selectedFile;;
+    public static JLabel selectedFile;
     public static JPanel filePanel;
     public static JPanel fileButtonPanel;
     public static JButton readFile;
@@ -22,4 +22,4 @@ public class Components {
     public static JTextField nameField;
     public static JButton commitToList;
     public static JButton removeObject;
-};
+}
