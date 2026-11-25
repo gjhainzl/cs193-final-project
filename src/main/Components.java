@@ -38,4 +38,9 @@ public class Components {
     public static JButton fillDates;
     public static JPanel editDays;
     public static JPanel dayentryPanel;
+
+    //Getting results from all calendars
+    public static JPanel resultsPanel;
+    public static JList<String> bestDaysToMeet;
+    public static JButton getBestDays;
 }

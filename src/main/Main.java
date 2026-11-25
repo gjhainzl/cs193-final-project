@@ -24,6 +24,7 @@ public class Main {
             setUpFileReadWritePanel();
             setUpCalendarEditPanel();
             setUpDayEditPanel();
+            resultsSetUp();
         });
     }
 
@@ -32,11 +33,11 @@ public class Main {
 
         Components.frame = new JFrame("Calendar App");
         Components.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Components.frame.setSize(1000, 1000);
+        Components.frame.setSize(750, 1250);
 
 
         Components.mainPanel = new JPanel();
-        Components.mainPanel.setLayout(new GridLayout(3,1));
+        Components.mainPanel.setLayout(new GridLayout(4,1));
 
         Components.frame.add(Components.mainPanel);
 
@@ -300,6 +301,33 @@ public static void setUpDayEditPanel(){
         return new Calender(Components.nameField.getText());
 
     }
+
+    //Final part of results stuff
+    public static void resultsSetUp() {
+        Components.resultsPanel = new JPanel(new GridLayout(1, 2));
+
+        Components.bestDaysToMeet = new JList<>();
+        Components.getBestDays = new JButton("Get Result list");
+
+        Components.resultsPanel.add(new JScrollPane(Components.bestDaysToMeet));
+        Components.resultsPanel.add(Components.getBestDays);
+
+        Components.getBestDays.addActionListener(e -> {
+            List<Calender> calendars = new ArrayList<>();
+
+            for (int i = 0; i < calendarModel.getSize(); i++) {
+                calendars.add(calendarModel.getElementAt(i));
+            }
+
+            Components.bestDaysToMeet.setListData(
+                    MeetingPlanner.rankBestDays(calendars).toArray(new String[0])
+            );
+        });
+
+        Components.mainPanel.add(Components.resultsPanel);
+    }
+
+
 
 
 
