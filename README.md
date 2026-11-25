@@ -7,43 +7,50 @@ Trying to find dates and times that a large group of people will be available on
 
 ## How It Works
 
-A paragraph or a few bullets explaining what the software does at a
-high level. If you have a diagram, embed it here:
+The program allows you to build up multiple peoples calendars and find'
+what days the most people are available on.
+
+//Note, this diagram was made before I learned about JSwing and started 
+making the project using that as a basis.
 
 ![System diagram](docs/FlowChart.drawio.png)
 
 ## Tech Stack
 
 - **Language:** Java
-- **Libraries:** ArrayLists, Math, time
+- **Libraries:** javax.swing.*;
+   java.awt.*;
+   java.io.IOException;
+   java.io.ObjectInputStream;
+   java.io.ObjectOutputStream;
+   java.nio.file.Files;
+   java.nio.file.Path;
+   java.nio.file.Paths;
+   java.time.LocalDate;
+   java.util.ArrayList;
+   java.util.Collections;
+   java.util.List;
 - **External tools:** IntelliJ
 
 ## Setup
-
-Step-by-step: how does someone who just cloned your repo get it
-running?
-
-```bash
 git clone https://github.com/gjhainzl/cs193-final-project
-cd your-project
-./install.sh   # or whatever
-```
+cd cs193-final-project/src/main
+java run Main
 
 ## Usage
 
-How to actually run the thing, with examples.
-
-```bash
-./backup.sh ~/Documents
-```
+After running Main JSwing window will appear with all the functions
+of the program. 
+Using this program involves creating different peoples calendars, each
+calendar can be given the days that person is or isnt available on.
+The program then has a button to show a ranking of the the best dates that line up
+for all the days in the calendars.
 
 ## Roadmap
 
-Features you haven't built yet but plan to (pull these from your
-"Schedule" quadrant in the Eisenhower Matrix).
-
-- [ ] Desktop notifications
-- [ ] Multi-directory support
+- [Completed] Non Terminal Interface
+- [ ] Allowing import of pre-made calendars that can be added to a schedule.
+- [ ] Make it easier to add days to a calendar
 
 ## Author
 
