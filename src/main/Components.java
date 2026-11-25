@@ -8,7 +8,7 @@ public class Components {
     public static JPanel mainPanel;
 
     //File reading/writing stuff
-    public static JList<PlaceholderItem> objectList;
+    public static JList<Calender> calendarList;
     public static JLabel selectedFile;
     public static JPanel filePanel;
     public static JPanel fileButtonPanel;
@@ -16,10 +16,26 @@ public class Components {
     public static JButton writeFile;
     public static JButton refreshFiles;
 
-    //Object making/editing Stuff
-    public static JPanel objectPanel;
-    public static JLabel objectName;
+    //Calendar making/editing Stuff
+    public static JPanel calendarPanel;
+    public static JLabel calendarNameLabel;
     public static JTextField nameField;
     public static JButton commitToList;
     public static JButton removeObject;
+
+    //adding/removing individiual days in calendar
+    public static JList<Day> dayList;
+    public static JTextField monthField;
+    public static JLabel month;
+    public static JTextField dayField;
+    public static JLabel day;
+    public static JTextField yearField;
+    public static JLabel year;
+    public static JCheckBox availField;
+    public static JLabel available;
+    public static JButton addDay;
+    public static JButton removeDay;
+    public static JButton fillDates;
+    public static JPanel editDays;
+    public static JPanel dayentryPanel;
 }
