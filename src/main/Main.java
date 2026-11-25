@@ -19,7 +19,7 @@ public class Main {
     public static Day selectedDay;
     public static int currentIndex;
 
-    //Main! all on the EDT. No Multi-Threading for me!
+    //Main! all on the EDT.
     public static void main(String[] args){
 
         SwingUtilities.invokeLater(() -> {
