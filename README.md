@@ -1,6 +1,6 @@
 # Project Name
 
-One-sentence description of what it does.
+Calendar App to Schedule events for groups.
 
 ## The Problem
 Trying to find dates and times that a large group of people will be available on.
@@ -51,6 +51,9 @@ for all the days in the calendars.
 - [Completed] Non Terminal Interface
 - [ ] Allowing import of pre-made calendars that can be added to a schedule.
 - [ ] Make it easier to add days to a calendar
+
+## Video Walkthrough Link
+https://youtu.be/X9LH1HO8owM
 
 ## Author
 

@@ -91,12 +91,12 @@ public class Main {
 
         Components.mainPanel.add(Components.filePanel);
     }
-/*
-This does all the stuff needed to select and add/remove days from your
-selected calendar object. the JList is sorted BC addDays keeps it all clean.
+    /*
+    This does all the stuff needed to select and add/remove days from your
+    selected calendar object. the JList is sorted BC addDays keeps it all clean.
 
- */
-public static void setUpDayEditPanel(){
+     */
+    public static void setUpDayEditPanel(){
     Components.dayList = new JList<>(dayModel);
     Components.dayList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
     Components.editDays = new JPanel(new GridLayout(1, 2));
@@ -330,11 +330,5 @@ public static void setUpDayEditPanel(){
 
         Components.mainPanel.add(Components.resultsPanel);
     }
-
-
-
-
-
-
 
 }
